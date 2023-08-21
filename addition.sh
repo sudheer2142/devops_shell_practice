@@ -6,4 +6,9 @@ VarA=$1
 VarB=$2
 
 
-echo " SUM OF THE NUMBER $1 + $2 is : $($VarA+$VarB)
+echo " SUM OF THE NUMBER $1 + $2 is :" $((VarA+VarB))
+
+
+Sum=$((VarA+VarB))
+
+echo "SUM of The given values : $Sum"
