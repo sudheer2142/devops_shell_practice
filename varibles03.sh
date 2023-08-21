@@ -8,3 +8,12 @@ echo " Hi please enter username:"
 read "USERNAME"
 
 echo " $USERNAME hi "
+
+
+echo " Hi please enter password:"
+
+read -s "PASSWORD"
+
+echo -s " $PASSEORD  is visible "
+
+
