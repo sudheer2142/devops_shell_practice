@@ -14,6 +14,6 @@ echo " Hi please enter password:"
 
 read -s "PASSWORD"
 
-echo -s " $PASSEORD  is visible "
+echo -s " $PASSWORD  is visible "
 
 
