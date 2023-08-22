@@ -65,7 +65,7 @@ unzip /tmp/web.zip &>> LOG_FILE
 VALIDATE $? " unzipped the code in tmp folder"
 
 
-cp nginx.conf /etc/nginx/default.d/roboshop.conf  &>> LOG_FILE
+sed -i 'nginx.conf' '/etc/nginx/default.d/roboshop.conf'  &>> LOG_FILE
 
 VALIDATE $? " editting the conf folder"
 
