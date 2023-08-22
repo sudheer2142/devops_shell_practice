@@ -63,8 +63,11 @@ VALIDATE $? "Moved to the html path"
 unzip /tmp/web.zip &>> LOG_FILE
 
 VALIDATE $? " unzipped the code in tmp folder"
-
-cp roboshop.conf /etc/nginx/default.d  &>> LOG_FILE
+cd /etc/nginx/default.d &>> LOG_FILE 
+VALIDATE $? " moving to the default.d folder path"
+touch roboshop.conf
+VALIDATE $? " creating the conf file"
+cp roboshop.conf /etc/nginx/default.d/roboshop.conf &>> LOG_FILE
 
 VALIDATE $? " editting the conf folder"
 
